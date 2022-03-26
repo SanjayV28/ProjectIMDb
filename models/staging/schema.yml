@@ -1,0 +1,110 @@
+version: 2
+
+sources:
+    - name: raw
+      database: sanjay-fp-de
+      schema: raw
+
+      tables:
+       - name: externaltitleakas
+       - name: externaltitlebasics
+       - name: externaltitleepisode
+       - name: externaltitleratings
+
+models:
+    - name: stgtitleakas
+      description: This model contains information about the titleId, ordering, title, region, language, types, attributes, isOriginalTitle.
+      columns:
+          - name: titleId
+            description: an alphanumeric unique identifier of the title
+            tests:
+                - not_null:
+                    severity: warn
+          - name: ordering 
+            description: a number to uniquely identify rows for a given titleId
+          - name: title 
+            description: the localized title
+          - name: region 
+            description: the region for this version of the title
+          - name: language
+            description: the language of the title
+          - name: types 
+            description:  Enumerated set of attributes for this alternative title
+          - name: attributes
+            description: Additional terms to describe this alternative title
+          - name: isOriginalTitle 
+            description: 0 - not original title, 1 - original title
+
+    - name: stgtitlebasics
+      description: This model contains information about the tconst, titleType, primaryTitle, originalTitle, isAdult, startYear, endYear, runtimeMinutes, genres. 
+      columns:
+          - name: tconst
+            description: alphanumeric unique identifier of the title
+            tests:
+                - not_null:
+                    severity: warn
+                - unique:
+                    severity: warn
+          - name: titleType 
+            description: the type/format of the title (e.g. movie, short, tvseries, tvepisode, video, etc)
+            tests:
+                - accepted_values:
+                    values: "{{ var('titletype') }}"
+                    severity: warn
+          - name: primaryTitle 
+            description: the more popular title / the title used by the filmmakers on promotional materials at the point of release
+          - name: originalTitle 
+            description: original title, in the original language
+          - name: isAdult 
+            description: 0 - non-adult title, 1 - adult title
+          - name: startYear 
+            description: represents the release year of a title.
+          - name: endYear
+            description: TV Series end year. 
+          - name: runtimeMinutes 
+            description: primary runtime of the title, in minutes
+          - name: genres 
+            description: includes up to three genres associated with the title
+
+    - name: stgtitleepisode
+      description: This model contains the tv episode information
+      columns:
+          - name: tconst
+            description: alphanumeric unique identifier of the title
+            tests:
+                - not_null:
+                    severity: warn
+                - unique:
+                    severity: warn
+          - name: parentTconst 
+            description: alphanumeric identifier of the parent TV Series
+          - name: seasonNumber 
+            description: season number the episode belongs to 
+          - name: episodeNumber 
+            description: episode number of the tconst in the TV series
+
+    - name: stgtitleratings
+      description: This model contains the IMDb rating and votes information for titles
+      columns:
+          - name: tconst
+            description: alphanumeric unique identifier of the title
+            tests:
+                - not_null:
+                    severity: warn
+                - unique:
+                    severity: warn
+          - name: averageRating 
+            description: weighted average of all the individual user ratings
+            tests:
+                - not_null:
+                    severity: warn
+          - name: numVotes 
+            description: number of votes the title has received
+            tests:
+                - not_null:
+                    severity: warn
+
+
+    
+
+

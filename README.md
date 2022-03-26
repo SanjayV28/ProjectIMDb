@@ -1,2 +1,2 @@
 # dbtbigquery
-This is my dbt repository for imdb project
+This is my dbt repository for the DE Capstone project
