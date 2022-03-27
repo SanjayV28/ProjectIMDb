@@ -29,10 +29,10 @@ select
     episode.episodeNumber as episodeNumber,
     ratings.averageRating as averageRating,
     ratings.numVotes as numVotes
-    from titleakas as akas
-inner join titlebasics as basics
+from titleakas as akas
+left outer join titlebasics as basics
 on akas.titleId = basics.tconst
-inner join titleepisode as episode
+left outer join titleepisode as episode
 on akas.titleId = episode.tconst
-inner join titleratings as ratings
+left outer join titleratings as ratings
 on akas.titleId = ratings.tconst
