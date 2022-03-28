@@ -1,9 +1,12 @@
-# DTCCapstoneProject
+# DTC-Capstone-Project
 An End to End Data Engineering Project using GCP,Terraform, Airflow, Docker, DBT!
 
 ## Project Description
-### Objective
+
 The objective of the project is to build an end to end data pipeline using the IMDB datasets. To achieve this I have downloaded raw datasets from the IMDB website, uncompressed it, converted it to parquet format and uploaded it to the data lake. Next, Created an External and Partioned/Clustered Tables in the data warehouse for simple analysis on this datasets. Then, Applied transformation and correlated an aggregated table in the data warehouse which will have the complete information about the dataset that can be used for advaanced analysis and also for generating dashboards to the business stackholders.
+
+### Architecture
+![image](https://user-images.githubusercontent.com/43469072/160475035-f094861f-0a90-4e21-84ac-844081d9ae7c.png)
 
 ### Datasets
 This is a subsets of IMDb data are available for access to customers for personal and non-commercial use. Kindly check the below Dataset Location and details.
@@ -47,9 +50,6 @@ averageRating – weighted average of all the individual user ratings.
 numVotes - number of votes the title has received.
 
 Please check out this link https://www.imdb.com/interfaces/ for additional information.
-
-### Architecture
-Pending
 
 ### Technologies
   - Cloud : Google Cloud Platform (GCP)
