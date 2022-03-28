@@ -6,7 +6,9 @@ An End to End Data Engineering Project using GCP,Terraform, Airflow, Docker, DBT
 The objective of the project is to build an end to end data pipeline using the IMDB datasets. To achieve this I have downloaded raw datasets from the IMDB website, uncompressed it, converted it to parquet format and uploaded it to the data lake. Next, Created an External and Partioned/Clustered Tables in the data warehouse for simple analysis on this datasets. Then, Applied transformation and correlated an aggregated table in the data warehouse which will have the complete information about the dataset that can be used for advaanced analysis and also for generating dashboards to the business stackholders.
 
 ### Datasets
-#### Data Location
+This is a subsets of IMDb data are available for access to customers for personal and non-commercial use. Kindly check the below Dataset Location and details.
+
+#### Dataset Location
 The dataset files can be accessed and downloaded from https://datasets.imdbws.com/. The data is refreshed daily.
 
 #### Dataset Details
@@ -43,6 +45,8 @@ episodeNumber (integer) – episode number of the tconst in the TV series.
 tconst (string) - alphanumeric unique identifier of the title.
 averageRating – weighted average of all the individual user ratings.
 numVotes - number of votes the title has received.
+
+Please check out this link https://www.imdb.com/interfaces/ for additional information.
 
 ### Architecture
 Pending
