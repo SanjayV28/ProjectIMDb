@@ -1,4 +1,4 @@
-# DTC-Capstone-Project
+# ProjectIMDb
 An End to End Data Engineering Project using GCP,Terraform, Airflow, Docker, DBT!
 
 ## Project Description
