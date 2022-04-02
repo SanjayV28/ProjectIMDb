@@ -43,16 +43,15 @@ Now we have successfully completed the Docker setup. We can start our data pipel
     ```
  ## DAGs
  
- For this project, We will setup the below four DAGs. 
- - `titleakas_dag.py`, `titlebasics_dag.py`, `titleepisode_dag.py` and `titleratings_dag.py`
+ - For this project, We will setup four DAGs called `titleakas_dag.py`, `titlebasics_dag.py`, `titleepisode_dag.py` and `titleratings_dag.py`.
+ - These DAGs are scheduled to run on a daily basis because the data source IMDb is refreshed daily.
+ - These DAGs are similar in structure and have multiple tasks.
+ - DAGs Flow:
    - These DAGs will download the raw datasets from the IMDb Wbsite and uncompress it. 
    - Convert the uncompressed datasets to parquet format.
    - Upload the converted parquet file into Google Cloud Storage Bucket. 
    - Create an external tables from the parquet files.
    - Create a partioned/clustered tables from the external tables by partioning/clustering the columns.
  
- - DAGs Flow:
-   >**Note: These DAGs are scheduled to run on a daily basis because the IMDb source data is refreshed daily**.
-   
-   Pending
+   ...
    
