@@ -53,5 +53,5 @@ Now we have successfully completed the Docker setup. We can start our data pipel
    - Create an external tables from the parquet files.
    - Create a partioned/clustered tables from the external tables by partioning/clustering the columns.
  
-   ...
+  ![DAGs flow](https://github.com/SanjayV28/ProjectIMDb/blob/4355dd5a23e059a1032d678799ddc771370abad9/images/DAGsGraph.png)
    
