@@ -11,3 +11,5 @@ Now we have our transformed data in production. We can use that for building das
   - Genres based distribution
   - Amount of records per year
   - Amount of records per region
+
+The Dashboards can be found [here](https://datastudio.google.com/reporting/a62b4a5f-86bc-433d-9c27-253111dbe45e/page/UL3oC)
