@@ -29,7 +29,7 @@ I have configured the neccesary resources in the terraform configuration files (
   ```
   terraform apply
   ```
-**_Now you have successfully configured the infrastructure for this project!!_** 
+**_Congratulations, Now you have successfully configured the infrastructure for this project!!_** 
   
 - Delete your infrastructure after completing the project, to avoid costs on any running services
   ```
