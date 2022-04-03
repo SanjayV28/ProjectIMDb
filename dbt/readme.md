@@ -26,7 +26,9 @@ We have our raw data loaded into our data warehouse so far. We will now transfor
 - Under the `core` folder, create two new files called **schema.yml and facttitletable.sql**
 - In the `schema.yml` file, We are defining the essential tests and documentation for our model facttitletable.sql.
 - In the `facttitletable.sql` file, We are selecting the required columns by joining the stgtitleakas.sql, stgtitlebasics.sql, stgtitleepisode.sql, and stgtitleratings.sql based on the titleID column to make a desired table.
+
   ![DBT flow](https://github.com/SanjayV28/ProjectIMDb/blob/4eebe46e5e7a57eb872c39a85dda7157d4304ba5/images/DBT.png)
+  
 - Now, we can run and test our models using the command `dbt build` at the bottom which will complete the mentioned tests in the `schema.yml` files and build the models under the `staging` BigQuery dataset if there are no errors returned.
 - Finally, we can click the `commit` icon on the top left to commit our changes in the repository.
 
@@ -42,4 +44,4 @@ We have our raw data loaded into our data warehouse so far. We will now transfor
   - Schedule this job to run every 12 hours. So the job will run twice a day.
 - Finally save the job and maually run to make sure our models are created under production BigQuery dataset.
 
-**_Congratulations, Now we have successfully transformed our data based on the requirements and made it available for further analytics and visualisations!!_**
+**_Congratulations, Now we have successfully transformed our data based on the requirements and made it available for both advanced analytics and visualisations!!_**
