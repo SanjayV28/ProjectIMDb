@@ -4,7 +4,7 @@ We have our raw data loaded into our data warehouse so far. We will now transfor
 
 ## DBT Setup
 - The first step is to create a DBT account [here](https://www.getdbt.com/signup/).
-- Create a service account for DBT to access the bigquery and grant viewer and BigQuery admin access to the service account. Now that the service account has been created we need to add and download a JSON key, go to the keys section, select "create new key". Select key type JSON and once you click on create it will get inmediately downloaded for you to use.
+- Create a service account for DBT to access the bigquery and grant viewer and BigQuery admin access to the service account. Now that the service account has been created we need to add and download a JSON key, go to the keys section, select "create new key". Select key type JSON and once you click on create it will get immediately downloaded for you to use.
   >**Note:** Instead of using a new service account for DBT, You can also use the service account we created earlier for other services by adding viewer access to it.
 - Set up the new project
   - Create a project and name your project
@@ -38,7 +38,7 @@ We have our raw data loaded into our data warehouse so far. We will now transfor
   - Name: Your environment name(e.g. Production).
   - Type: Deployment.
   - Credentials Schema: Your prod dataset name(e.g. production).
-- Now we have our production environment ready, We can create a new job and name your job and set this production to it. In the job configurartion settings, enter the following:
+- Now we have our production environment ready, We can create a new job and name your job and set this production to it. In the job configuration settings, enter the following:
   - Select the Generate docs to document our work. 
   - Enter the `dbt test` and `dbt run` commands under the commands tab to test and run our models.
   - Schedule this job to run every 12 hours. So the job will run twice a day.

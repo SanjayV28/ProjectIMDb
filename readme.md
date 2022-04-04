@@ -9,7 +9,7 @@ The Internet Movie Database (IMDb) is the world's most popular and the largest a
 
 ### Solution
 
-To address the above problem, We are building this project solution using the best practices of Data Engineering. Our objective is to have one final desired table in the data warehouse which will have an entire information and make it available for both advanced analytics and visualisations by following the below steps!
+To address the above problem, We are building this project solution using the best practices of Data Engineering. Our objective is to have one final desired table in the data warehouse which will have entire information and make it available for both advanced analytics and visualisations by following the below steps!
 
 - Configure the Project Infrastructure using **Terraform**. Please check out the instructions [here](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/terraform/readme.md).
 - Create a data pipeline using **Airflow** for processing the dataset, uploading it to the datalake, moving the data from the data lake to the data warehouse and create an external and partioned/clustered tables. Please check out the instructions [here](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/airflow/readme.md).

@@ -43,7 +43,7 @@ Now we have successfully completed the Docker setup. We can start with our data 
     ```
  ## DAGs
  
- - For this project, We will setup four DAGs called `titleakas_dag.py`, `titlebasics_dag.py`, `titleepisode_dag.py` and `titleratings_dag.py`.
+ - For this project, We will set up four DAGs called `titleakas_dag.py`, `titlebasics_dag.py`, `titleepisode_dag.py` and `titleratings_dag.py`.
  - These DAGs are scheduled to run on a daily basis because the data source IMDb is refreshed daily.
  - These DAGs are similar in structure and have multiple tasks.
  - DAGs Flow:
