@@ -1,5 +1,5 @@
 # ProjectIMDb
-An End-to-End Data Engineering Project using the IMDb datasets and by utilising tools like Google Cloud Platform (GCP), Terraform, Airflow, Docker, and DBT!
+An End-to-End Data Engineering Project using the IMDb datasets and by utilizing tools like Google Cloud Platform (GCP), Terraform, Airflow, Docker, and DBT!
 
 ## Project Description
 
