@@ -16,3 +16,5 @@ Now we have our transformed data in production. We can use that for building das
 You can also check out to the below final Dashboard [here](https://datastudio.google.com/reporting/a62b4a5f-86bc-433d-9c27-253111dbe45e)
 
 ![Dashboard](https://github.com/SanjayV28/ProjectIMDb/blob/dc6427bdbf401442550a5254187974e4aeb916f0/images/Dashboard.png)
+
+**_Congratulations, Now we have successfully build our first dashboard!!._**
