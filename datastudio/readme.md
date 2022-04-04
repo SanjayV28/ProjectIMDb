@@ -17,4 +17,4 @@ You can also check out to the below final Dashboard [here](https://datastudio.go
 
 ![Dashboard](https://github.com/SanjayV28/ProjectIMDb/blob/dc6427bdbf401442550a5254187974e4aeb916f0/images/Dashboard.png)
 
-**_Congratulations, Now we have successfully build our first dashboard!!._**
+**_Congratulations, Now we have successfully created our final dashboard!!._**
