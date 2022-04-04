@@ -6,12 +6,12 @@ We have our raw data loaded into our data warehouse so far. We will now transfor
 - The first step is to create a DBT account [here](https://www.getdbt.com/signup/).
 - Create a service account for DBT to access the bigquery and grant viewer and BigQuery admin access to the service account. Now that the service account has been created we need to add and download a JSON key, go to the keys section, select "create new key". Select key type JSON and once you click on create it will get inmediately downloaded for you to use.
   >**Note:** Instead of using a new service account for DBT, You can also use the service account we created earlier for other services by adding viewer access to it.
-- Setup the new project
+- Set up the new project
   - Create a project and name your project
   - Set up a Database Connection - **Choose BigQuery**. On the setting page, Upload the json key you downloaded for the DBT service account. This will fill out most fields related to the development credentials. Scroll down to the end of the page and enter your dataset name.
      >**Note:** The dataset you'll enter under the development credentials is the one you'll use to run and build your models during development.
   - Click on test to test your connection to the Bigquery.
-- Now the connection is established, You can add your github repository by choosing managed repository and provide a name.
+- Now the connection is established, You can add your GitHub repository by choosing managed repository and provide a name.
 - Finally, we can review our project settings and make sure that everything is set.
 - You can also check out the same instructions mentioned [here](https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/00caff1b661bcadecb82f960ee92c917362fa3c0/week_4_analytics_engineering/dbt_cloud_setup.md).
 
@@ -22,7 +22,7 @@ We have our raw data loaded into our data warehouse so far. We will now transfor
 - Click on the `dbt_project.yml` and update the project name and add materialized settings to the two newly created models subfolders. By doing so, we are informing the DBT to create all models as views under staging and create all models as tables under core. 
 - Under the `staging` folder, create five new files called **schema.yml, stgtitleakas.sql, stgtitlebasics.sql, stgtitleepisode.sql and stgtitleratings.sql**.
 - In the `schema.yml` file, We are defining the essential tests and documentation for our models stgtitleakas.sql, stgtitlebasics.sql, stgtitleepisode.sql and stgtitleratings.sql.
-- In the `stgtitleakas.sql`, `stgtitlebasics.sql`, `stgtitleepisode.sql`, and `stgtitleratings.sql` files, We are replacing the alpha numeric values in few columns and typecasting all columns to the right data type.
+- In the `stgtitleakas.sql`, `stgtitlebasics.sql`, `stgtitleepisode.sql`, and `stgtitleratings.sql` files, We are replacing the alphanumeric values in few columns and typecasting all columns to the right data type.
 - Under the `core` folder, create two new files called **schema.yml and facttitletable.sql**
 - In the `schema.yml` file, We are defining the essential tests and documentation for our model facttitletable.sql.
 - In the `facttitletable.sql` file, We are selecting the required columns by joining the stgtitleakas.sql, stgtitlebasics.sql, stgtitleepisode.sql, and stgtitleratings.sql based on the titleID column to make a desired table.
@@ -39,9 +39,9 @@ We have our raw data loaded into our data warehouse so far. We will now transfor
   - Type: Deployment.
   - Credentials Schema: Your prod dataset name(e.g. production).
 - Now we have our production environment ready, We can create a new job and name your job and set this production to it. In the job configurartion settings, enter the following:
-  - Select the Genrate docs to document our work. 
+  - Select the Generate docs to document our work. 
   - Enter the `dbt test` and `dbt run` commands under the commands tab to test and run our models.
   - Schedule this job to run every 12 hours. So the job will run twice a day.
-- Finally save the job and maually run to make sure our models are created under production BigQuery dataset.
+- Finally, save the job and manually run to make sure our models are created under production BigQuery dataset.
 
 **_Congratulations, Now we have successfully transformed our data based on the requirements and made it available for both advanced analytics and visualisations!!_**

@@ -1,14 +1,14 @@
 # Setting up the Project Infrastructure 
 
-There are plenty of Iac tools (Terraform, Pulumi, Cloud Formation) available to setup your infrastructure. I have used **Terraform** in this project. If you like to proceed with **Terraform**, Install the Terraform in your local machine or in your virtual machine (Refer project prerequisites) and Kindly follow the below instructions.
+There are plenty of Iac tools (Terraform, Pulumi, Cloud Formation) available to set up your infrastructure. I have used **Terraform** in this project. If you like to proceed with **Terraform**, Install the Terraform in your local machine or in your virtual machine (Refer project prerequisites) and Kindly follow the below instructions!
 
-## Configuring the Infrastructre
+## Configuring the Infrastructure
 
-For this project, I need to setup one Google Cloud Storage bucket and three BigQuery datasets.
+For this project, I need to set up one Google Cloud Storage bucket and three BigQuery datasets.
 - The GCS bucket will be the data lake and contains all the raw files.
 - The BigQuery datasets will be the data warehouse and contains the raw, staging and production tables respectively.
 
-I have configured the neccesary resources in the terraform configuration files (Kindly check)
+I have configured the necessary resources in to terraform configuration files (Kindly check)
 
 ## Spinning up the Infrastructure
 

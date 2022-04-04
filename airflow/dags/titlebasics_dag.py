@@ -83,7 +83,7 @@ default_args = {
 with DAG(
         dag_id="titlebasics_dag",
         start_date=datetime(2022, 3, 23),
-        schedule_interval="@once",
+        schedule_interval="@daily",
         default_args=default_args,
         catchup=False,
         max_active_runs=1,
@@ -149,8 +149,8 @@ with DAG(
                 CLUSTER BY tconst, titleType,startYear AS \
                 SELECT * FROM `{PROJECT_ID}.{BIGQUERY_DATASET}.externaltitlebasics`;
                 """
-    bigquery_PC_table_task = BigQueryInsertJobOperator(
-        task_id="bigquery_PC_table_task",
+    bigquery_PartitionCluster_table_task = BigQueryInsertJobOperator(
+        task_id="bigquery_PartitionCluster_table_task",
         configuration={
             "query": {
                 "query": QUERY,
@@ -159,4 +159,4 @@ with DAG(
         },
     )
 
-download_dataset_task >> uncompress_dataset_task >> format_to_csv_task >> format_to_parquet_task >> local_to_gcs_task >> bigquery_external_table_task >> bigquery_PC_table_task
+download_dataset_task >> uncompress_dataset_task >> format_to_csv_task >> format_to_parquet_task >> local_to_gcs_task >> bigquery_external_table_task >> bigquery_PartitionCluster_table_task
