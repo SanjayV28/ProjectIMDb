@@ -71,6 +71,10 @@ Before starting with the project, you'll need to have the following tools instal
      - Enable the below APIs for your GCP services
        - https://console.cloud.google.com/apis/library/iam.googleapis.com
        - https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
+     - Clone this git repository 
+       ```
+       git clone https://github.com/SanjayV28/ProjectIMDb.git && cd ProjectIMDb
+       ```
      
 **_Now you have successfully completed the Project Prerequisites, you can proceed with the steps mentioned in the project solution!!_**
 
