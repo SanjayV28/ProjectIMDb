@@ -1,6 +1,6 @@
 # Setting up the Project Infrastructure 
 
-There are plenty of Iac tools (Terraform, Pulumi, Cloud Formation) available to setup your infrastructure. I have used **Terraform** in this project. If you like to proceed with **Terraform**, Install the Terraform in your local machine or in your virtual machine (Refer prerequsites) and Kindly follow the below instructions.
+There are plenty of Iac tools (Terraform, Pulumi, Cloud Formation) available to setup your infrastructure. I have used **Terraform** in this project. If you like to proceed with **Terraform**, Install the Terraform in your local machine or in your virtual machine (Refer oroject prerequisites) and Kindly follow the below instructions.
 
 ## Configuring the Infrastructre
 
