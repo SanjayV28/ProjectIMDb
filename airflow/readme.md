@@ -59,7 +59,7 @@ Now we have successfully completed the Docker setup. We can start with our data 
      - externalttitlebasics - external table for titlebasics
      - externalttitleepisode - external table for titleepisode
      - externalttitleratings - external table for titleratings
-   - Create a partioned/clustered tables from the external tables.
+   - Create a partitioned/clustered tables from the external tables.
      >**Note:** My query patterns are based on categorical columns(mostly of string datatype). So I have used only clustering to optimize my tables.
      - titleakas - This is a clustered table created from `externalttitleakas` and clustered by `titleid`,`region`,and `language`
      - titlebasics - This is a clustered table created from `externalttitlebasics` and clustered by `tconst`,`titletype`
