@@ -1,5 +1,5 @@
 # ProjectIMDb
-An End to End Data Engineering Project using the IMdb datasets and by utilising the tools like Google Cloud Platform(GCP),Terraform, Airflow, Docker,and DBT!
+An End-to-End Data Engineering Project using the IMDb datasets and by utilising tools like Google Cloud Platform (GCP), Terraform, Airflow, Docker, and DBT!
 
 ## Project Description
 
@@ -12,7 +12,7 @@ The Internet Movie Database (IMDb) is the world's most popular and the largest a
 To address the above problem, We are building this project solution using the best practices of Data Engineering. Our objective is to have one final desired table in the data warehouse which will have entire information and make it available for both advanced analytics and visualisations by following the below steps!
 
 - Configure the Project Infrastructure using **Terraform**. Please check out the instructions [here](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/terraform/readme.md).
-- Create a data pipeline using **Airflow** for processing the dataset, uploading it to the datalake, moving the data from the data lake to the data warehouse and create an external and partioned/clustered tables. Please check out the instructions [here](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/airflow/readme.md).
+- Create a data pipeline using **Airflow** for processing the dataset, uploading it to the datalake, moving the data from the data lake to the data warehouse and create an external and partitioned/clustered tables. Please check out the instructions [here](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/airflow/readme.md).
 - Transform the data in the data warehouse using **Data Build Tool(DBT)** and prepare it for analytics and visualisations. Please check out the instructions [here](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/dbt/readme.md).
 - Created a dashboard using **Google Data Studio**. Please check out the instructions [here](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/datastudio/readme.md).
 
@@ -38,13 +38,13 @@ Please check out this link [here](https://www.imdb.com/interfaces/) for addition
   - Containerization : **Docker, Docker Compose**
   - Workflow orchestration: **Airflow**
   - Data Lake: **Google Cloud Storage (GCS)**
-  - Data Wareshouse:  **Google BigQuery**
+  - Data Warehouse:  **Google BigQuery**
   - Transformation: **Data Build Tool (DBT)**
   - Visualisation: **Google Data Studio**
 
 ### Final Dashboard
 
-![Dashbaord](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/images/Dashboard.png)
+![Dashboard](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/images/Dashboard.png)
 
 ### Project Prerequisites
 
@@ -56,13 +56,13 @@ Before starting with the project, you'll need to have the following tools instal
    - You can install Terraform [here](https://www.terraform.io/downloads) for your OS.
  - Google Cloud Platform
    - Creating GCP account and setting up access
-     - Create a free GCP account using your personal/work Google emailid [here](https://console.cloud.google.com/freetrial?_ga=2.76083285.1133969509.1649052192-261372602.1649052192&_gac=1.262941368.1649052192.EAIaIQobChMI0520t9359gIVkJlmAh0wSgm_EAAYASAAEgK5aPD_BwE)
+     - Create a free GCP account using your personal/work Google email id [here](https://console.cloud.google.com/freetrial?_ga=2.76083285.1133969509.1649052192-261372602.1649052192&_gac=1.262941368.1649052192.EAIaIQobChMI0520t9359gIVkJlmAh0wSgm_EAAYASAAEgK5aPD_BwE)
      - Create a new Project by providing the Project Name and Project ID
      - Create a service account and authentication 
        - We will create a new service account for this project services and grant `Storage Admin`,`Storage Object Admin`, `BigQuery Admin` and `Viewer` roles to it.
        - Next, create a json key for authenticating the service account and download it to your local.
      - Install Google Cloud SDK [here](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjimev04vn2AhUcmmYCHaYvBT4YABAAGgJzbQ&ohost=www.google.com&cid=CAASJeRojOrZ3NBL_Vi9AKUmGAT2SDAuRntj1A3D2SqX2_zmMWceeR0&sig=AOD64_3s-vO40cV94ShXol65zNfN7kytqA&q&adurl&ved=2ahUKEwiAw-T04vn2AhXAlNgFHds5DjUQ0Qx6BAgCEAE)
-     - set Environment Variable and authentictate sdk
+     - set Environment Variable and authenticate sdk
        ```
        export GOOGLE_APPLICATION_CREDENTIALS = "_path to the downloaded json jey file_"
        

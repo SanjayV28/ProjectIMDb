@@ -12,7 +12,7 @@ I have configured the necessary resources in to terraform configuration files (K
 
 ## Spinning up the Infrastructure
 
-- Initiate the terraform and download the required dependencies
+- Initiate terraform and download the required dependencies
   ```
   terraform init
   ```
