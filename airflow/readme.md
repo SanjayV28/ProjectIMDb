@@ -47,7 +47,9 @@ Now we have successfully completed the Docker setup. We can start with our data 
  - These DAGs are scheduled to run on a daily basis because the data source IMDb is refreshed daily.
  - These DAGs are similar in structure and have multiple tasks.
  - DAGs Flow:
+ 
    ![DAGs flow](https://github.com/SanjayV28/ProjectIMDb/blob/4355dd5a23e059a1032d678799ddc771370abad9/images/DAGsGraph.png)
+   
    - The above tasks shown are same in all the four dags `titleakas_dag.py`, `titlebasics_dag.py`, `titleepisode_dag.py` and `titleratings_dag.py`.
    - These DAGs will download the raw dataset from the IMDb Website and uncompress it. 
    - Convert the uncompressed datasets to parquet format.
