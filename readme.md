@@ -48,8 +48,37 @@ Please check out this link [here](https://www.imdb.com/interfaces/) for addition
 
 ### Project Prerequisites
 
-...
+Before starting with the project, you'll need to have the following tools installed on your computer,
+ - Docker and Docker-Compose
+   - The first step is to install Docker [here](https://docs.docker.com/get-docker/) and follow the instructions specified to your OS.
+   - Next, You can install Docker-Compose [here](https://docs.docker.com/compose/install/) and follow the instructions specified to your OS.
+ - Terraform
+   - You can install Terraform [here](https://www.terraform.io/downloads) for your OS.
+ - Google Cloud Platform
+   - Creating GCP account and setting up access
+     - Create an free GCP account using your personal/work Google emailid [here](https://console.cloud.google.com/freetrial?_ga=2.76083285.1133969509.1649052192-261372602.1649052192&_gac=1.262941368.1649052192.EAIaIQobChMI0520t9359gIVkJlmAh0wSgm_EAAYASAAEgK5aPD_BwE)
+     - Create a new Project by providing the Project Name and Project ID
+     - Create a service account and setup authentication 
+       - We will create a new service account for this project services and grant `Storage Admin`,`Storage Object Admin`, `BigQuery Admin` and `Viewer` access to it.
+       - Next, create a json key for authenticating the service account and download it to your local.
+     - Install Google Cloud SDK [here](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjimev04vn2AhUcmmYCHaYvBT4YABAAGgJzbQ&ohost=www.google.com&cid=CAASJeRojOrZ3NBL_Vi9AKUmGAT2SDAuRntj1A3D2SqX2_zmMWceeR0&sig=AOD64_3s-vO40cV94ShXol65zNfN7kytqA&q&adurl&ved=2ahUKEwiAw-T04vn2AhXAlNgFHds5DjUQ0Qx6BAgCEAE)
+     - set Environment Variable and authentictate
+       ```
+       export GOOGLE_APPLICATION_CREDENTIALS = "_path to the downloaded json jey file_"
+       
+       gcloud auth application-default login
+       ```
+     - Enable the below APIs for your GCP services
+       - https://console.cloud.google.com/apis/library/iam.googleapis.com
+       - https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
+     
+**_Now you have successfully completed the Project Prerequisites, you can proceed with the steps mentioned in the project solution!!_**
 
 ### Next steps
 
-...
+Now we have successfully completed the project, We can make these below improvemnts for exploring more!!
+- Stream Processing over Batch to consume data in real time using Kafka.
+- Try other cloud services like AWS and Azure.
+- Check data quality by testing the essential test cases.  
+- Try using Cloud specific tools like Dataproc and Cloud Composer etc.
+
