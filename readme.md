@@ -18,7 +18,7 @@ To address the above problem, We are building this project solution using the be
 
 ### Architecture
 
-![ProjectArchitecture](images/ProjectArchitecture.PNG)
+![ProjectArchitecture](images/ProjectArchitecture.png)
 
 ### Dataset
 This is a subsets of IMDb data are available for access to customers for personal and non-commercial use. The data is refreshed daily. The dataset files can be accessed and downloaded [here](https://datasets.imdbws.com/.)
