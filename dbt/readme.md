@@ -27,7 +27,7 @@ We have our raw data loaded into our data warehouse so far. We will now transfor
 - In the `schema.yml` file, We are defining the essential tests and documentation for our model facttitletable.sql.
 - In the `facttitletable.sql` file, We are selecting the required columns by joining the stgtitleakas.sql, stgtitlebasics.sql, stgtitleepisode.sql, and stgtitleratings.sql based on the titleID column to make a desired table.
 
-  ![DBT FLOW](../images/DBT.png)
+  ![DBT FLOW](../images/DBT.PNG)
   
 - Now, we can run and test our models using the command `dbt build` at the bottom which will complete the mentioned tests in the `schema.yml` files and build the models under the `staging` BigQuery dataset if there are no errors returned.
 - Finally, we can click the `commit` icon on the top left to commit our changes in the repository.

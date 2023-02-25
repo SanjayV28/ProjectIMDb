@@ -48,7 +48,7 @@ Now we have successfully completed the Docker setup. We can start with our data 
  - These DAGs are similar in structure and have multiple tasks.
  - DAGs Flow:
  
-   ![DAGsGraph](../images/DAGsGraph.png)
+   ![DAGsGraph](../images/DAGsGraph.PNG)
    
    - The above tasks shown are same in all the four dags `titleakas_dag.py`, `titlebasics_dag.py`, `titleepisode_dag.py` and `titleratings_dag.py`.
    - These DAGs will download the raw dataset from the IMDb Website and uncompress it. 
