@@ -17,7 +17,7 @@ To address the above problem, We are building this project solution using the be
 - Created a dashboard using **Google Data Studio**. Please check out the instructions [here](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/datastudio/readme.md).
 
 ### Architecture
-![ProjectArchitecture](https://github.com/SanjayV28/ProjectIMDb/blob/master/images/ProjectArchitecture.png)
+![ProjectArchitecture](images/ProjectArchitecture.png)
 
 ### Dataset
 This is a subsets of IMDb data are available for access to customers for personal and non-commercial use. The data is refreshed daily. The dataset files can be accessed and downloaded [here](https://datasets.imdbws.com/.)
@@ -44,7 +44,7 @@ Please check out this link [here](https://www.imdb.com/interfaces/) for addition
 
 ### Final Dashboard
 
-![Dashboard](https://github.com/SanjayV28/ProjectIMDb/blob/066ec8456e067f3283f3ce3d283a448c8f323295/images/Dashboard.png)
+![Dashboard](images/Dashboard.png)
 
 ### Project Prerequisites
 
@@ -70,8 +70,7 @@ Before starting with the project, you'll need to have the following tools instal
        ```
      - Enable the below APIs for your GCP services
        - https://console.cloud.google.com/apis/library/iam.googleapis.com
-       - https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com
-     - Clone this git repository 
+       - https://console.cloud.google.com/apis/library/iamcredentials.googleapis.com     - Clone this git repository 
        ```
        git clone https://github.com/SanjayV28/ProjectIMDb.git && cd ProjectIMDb
        ```
