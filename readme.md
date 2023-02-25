@@ -17,7 +17,7 @@ To address the above problem, We are building this project solution using the be
 - Created a dashboard using **Google Data Studio**. Please check out the instructions [here](https://github.com/SanjayV28/ProjectIMDb/blob/74b124e6053cc58b4b22fc36df9c0c6198ae7ae7/datastudio/readme.md).
 
 ### Architecture
-![ProjectArchitecture](https://github.com/SanjayV28/ProjectIMDb/blob/76a07efe703d03b82098180b3836cd3a169520cc/images/ProjectArchitecture.png)
+![ProjectArchitecture](https://user-images.githubusercontent.com/43469072/221376020-ca62094e-9f96-412f-8249-ee5cd9e93d9d.png)
 
 ### Dataset
 This is a subsets of IMDb data are available for access to customers for personal and non-commercial use. The data is refreshed daily. The dataset files can be accessed and downloaded [here](https://datasets.imdbws.com/.)
